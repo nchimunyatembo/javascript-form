@@ -1,20 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+<meta charset="UTF-8">
+<meta name="viewport"content="width=device-width", initial scale=1>
+<link rel="stylesheet"href="https://www.3schools.com/w3css/3/w3.css">
 <body>
-
-<p>PLP javascript enabled <form action=""></form>:</p>
-
-<form id="frm1" action="/action_page.php">
-  First name: <input type="text" name="fname"><br>
-  Last name: <input type="text" name="lname"><br><br>
-  <input type="button" onclick="myFunction()" value="Submit">
+<h>PLP Form with javascript enabled </h><br>
+<div class="rightnav">
+<input type="text"id="search"name="search">
+<button class="btn btn-sm">search </button>
+</div><br>
+<p>Form with javascript that correct user details and validate before submission</p>
+<head><tittle>REGISTRATION FORM</tittle></head>
+<body>
+<fieldset>
+<h>REGISTRATION FORM </h>
+<form id="frm" action="/action_page.php">
+<legend >personal details </legend >
+<label>Enter your first name </label ><br>
+<input type ="text"name ="name" required><br>
+<label>Enter your Surname </label ><br>
+<input type ="text"name ="name" required></br>
+<label >Enter your email address </label ><br>
+<input type ="text "name ="email " required><br>
+<label >create your password </label ><br>
+<input type ="password "name ="pass" required><br>
+<label >confirm your password </label ><br>
+<input type ="password "name ="pass " required><br><br>
+<label >Enter your gender </label ><br>
+<input type="radio" id="gender"name="gender"value="Male" required/>Male <br>
+<input type="radio"id="gender "name="gender"value="Female" required/>Female <br>
+<input type="radio"id="gender "name="gender"value="other" required/>Other <br>
+<label >Enter your hobby</label ><br>
+<input type ="checkbox"id="cricket "name ="cricket "value ="cricket " required/>
+<label for="cricket ">cricket </label ><br>
+<input type ="checkbox"id="football "name ="football "value ="football " required/>
+<label for ="football">Football </label >
+<br>
+<label >Enter your address </label ><br>
+<textarea required></textarea><br>
+<input type="submit" onclick="myjavascript()" value="sign up"/>
 </form>
-
+</fieldset>
 <script>
-function myFunction() {
-  document.getElementById("frm1").submit();
-}
-</script>
-
-</body>
+    function myjavascript() {
+      document.getElementById("frm").submit();
+    }
+    </script>
+</body >
 </html>
